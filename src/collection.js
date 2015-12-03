@@ -778,6 +778,7 @@ export default class Collection {
   }) {
     const previousRemote = this.api.remote;
     if (options.remote) {
+      console.log("using custom remote", options.remote);
       // Note: setting the remote ensures it's valid, throws when invalid.
       this.api.remote = options.remote;
     }
